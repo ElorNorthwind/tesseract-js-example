@@ -1,2 +1,5 @@
 /node_modules
-*traineddata*
+/*traineddata*
+/src/assets/images/*
+/src/assets/pdf/*
+/src/assets/text/*
