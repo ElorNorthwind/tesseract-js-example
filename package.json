@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "progress": "^2.0.3",
     "tesseract.js": "^4.0.2"
   }
 }
