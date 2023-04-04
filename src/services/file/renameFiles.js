@@ -8,7 +8,7 @@ import path from "path";
 export async function renameFiles() {
   const files = await fs.promises.readdir(RECOGNIZED_DIRECTORY);
   const fioRegex =
-    /(?<lastname>[А-Я][а-я]+)[\s\n]+(?<firstname>[А-Я][а-я]+)[\s\n]+(?<surname>[А-Я][а-я]+),[\s\n]+зарег/g;
+    /(?<lastname>[А-Я][а-яё]+)[\s\n`_]+(?<firstname>[А-Я][а-я]+)[\s\n\`_]+(?<surname>[А-Я][а-я]+)[,\.;][\s\n`_]+(?:[Зз]арег|[Пп]рож)/g;
 
   try {
     files.map(async (textName) => {
